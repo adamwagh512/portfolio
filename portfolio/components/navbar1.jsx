@@ -1,9 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsPersonLinesFill } from "react-icons/bs";
+
+// Many individual styling comments were left out because I can automatically see them. To ensure that you can see them as well please make sure you are using
+// The Tailwind CSS IntelliSense extention in your IDE.
 
 const navbar = () => {
+  // useState hook that sets nav to false by default
+  const [nav, setNav] = useState(false);
+  // declares a function called handleNav that sets nav to the opposite of whatever it was
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
     // Controls the size and positioning of the navbar
     <div className="fixed top-0 w-full h-20 shadow-xl z-[100]">
@@ -42,16 +53,27 @@ const navbar = () => {
           </ul>
         </div>
         {/* The following div will only be visible when the screen size > med, and we will use it to display our menu on mobile devices */}
-        <div className="md:hidden">
+        <div onClick={handleNav} className="md:hidden">
           {/* accessing icon from react icons dependency(to install: npm add react-icons) */}
           {/* Increased Icon size */}
           <AiOutlineMenu size={25} />
         </div>
       </div>
       {/* Overlay for when the mobile menu is activated */}
-      <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
+      >
         {/* Styling for the mobile menu bar */}
-        <div className="fixed left-0 top-0 w-{75%} sm:w-[60%] md:[45%] h-screen bg-[#1f2937] p-10 ease-in duration-500">
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-{75%} sm:w-[60%] md:[45%] h-screen bg-[#1f2937] p-10 ease-in duration-500"
+              : // We set this to -100% fixed left so we can have the nice ease in feature
+                "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+          }
+        >
           <div>
             {/* Top part of the mobile menu */}
             <div className="flex w-full items-center justify-between">
@@ -63,7 +85,10 @@ const navbar = () => {
                 alt="logo"
               />
               {/* Controls button to close mobile menu */}
-              <div className="rounded-full shadow-lg shadow-gray-600/50 p-3 cursor-pointer">
+              <div
+                onClick={handleNav}
+                className="rounded-full shadow-lg border p-3 cursor-pointer"
+              >
                 <AiOutlineClose />
               </div>
             </div>
@@ -72,6 +97,48 @@ const navbar = () => {
               <p className="w-[85%] md:w-[90%] py-4">
                 Let's build something extraordinary
               </p>
+            </div>
+          </div>
+          {/* This div controls styling for mobile menu links */}
+          <div className="py-4 flex flex-col">
+            {/* Menu options for mobile menu */}
+            <ul className="uppercase">
+              <Link href="/">
+                <li className="py-4 text-sm">Home</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">About</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Skills</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Projects</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Contact</li>
+              </Link>
+            </ul>
+            {/* This div is responsible for rendereing 'Lets Connect' near the bottom of the mobile menu */}
+            <div className="pt-6">
+              <p className="uppercase tracking-widest text-[#0093B9]">
+                Lets Connect
+              </p>
+              {/* This div is responsible for rendering social media icons to the bottom of the screen */}
+              <div className="flex items-center justify-between my-4 w-[80%] sm:[80%]">
+                <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <FaLinkedinIn />
+                </div>
+                <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <FaGithub />
+                </div>
+                <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <AiOutlineMail />
+                </div>
+                <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <BsPersonLinesFill />
+                </div>
+              </div>
             </div>
           </div>
         </div>
