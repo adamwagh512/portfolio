@@ -5,6 +5,9 @@ import CSS_badge from '../public/assets/skills/css-badge.png'
 import JS_badge from '../public/assets/skills/JavaScript-badge.png'
 import Node_badge from '../public/assets/skills/node-badge.png'
 import Python_badge from '../public/assets/skills/python-badge.png'
+import Jupyter_badge from '../public/assets/skills/jupyter-badge.png'
+import Mongo_badge from '../public/assets/skills/mongodb3-badge.png'
+import Handlebars_badge from '../public/assets/skills/handlebars-badge.png'
 
 
 const Skills = () => {
@@ -17,6 +20,8 @@ const Skills = () => {
         <h2 className="py-4">What I can do</h2>
         {/* Grid container */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 ">
+
+
         {/* HTML badge */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -33,6 +38,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
+
+
         {/* CSS Badge  */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -49,6 +56,8 @@ const Skills = () => {
               </div>
             </div>
           </div>          
+
+
           {/* Javascript Badge */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -65,6 +74,8 @@ const Skills = () => {
               </div>
             </div>
           </div>          
+
+
           {/* Node Badge */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50 ">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -81,6 +92,8 @@ const Skills = () => {
               </div>
             </div>
           </div>          
+
+
           {/* Python Badge */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50 backdrop-blur-xl">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -97,12 +110,14 @@ const Skills = () => {
               </div>
             </div>
           </div>          
+
+
           {/* Jupyter Badge  */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50 backdrop-blur-xl">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/jupyter-badge.png"
+                  src={Jupyter_badge}
                   alt="html"
                   width="64"
                   height="64"
@@ -113,12 +128,14 @@ const Skills = () => {
               </div>
             </div>
           </div>          
+
+
           {/* Mongo Badge */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/mongodb3-badge.png"
+                  src={Mongo_badge}
                   alt="mongodb"
                   width="64"
                   height="64"
@@ -129,12 +146,14 @@ const Skills = () => {
               </div>
             </div>
           </div>          
+
+
           {/* Handlebars */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/handlebars-badge.png"
+                  src={Handlebars_badge}
                   alt="handlebars"
                   width="64"
                   height="64"
@@ -268,7 +287,7 @@ const Skills = () => {
           </div>      
 
           
-
+          {/* Learning Badge */}
           <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
