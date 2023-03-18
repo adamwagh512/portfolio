@@ -3,7 +3,8 @@ import Image from "next/image";
 import HTML from '../public/assets/skills/html-badge.png'
 import CSS_badge from '../public/assets/skills/css-badge.png'
 import JS_badge from '../public/assets/skills/JavaScript-badge.png'
-import Node_badge from '../public/assets/skills/python-badge.png'
+import Node_badge from '../public/assets/skills/node-badge.png'
+import Python_badge from '../public/assets/skills/python-badge.png'
 
 
 const Skills = () => {
@@ -53,7 +54,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/JavaScript-badge.png"
+                  src={JS_badge}
                   alt="JavaScript"
                   width="64"
                   height="64"
@@ -69,7 +70,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={JS_badge}
+                  src={Node_badge}
                   alt="node"
                   width="64"
                   height="64"
@@ -85,7 +86,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={Node_badge}
+                  src={Python_badge}
                   alt="python"
                   width="64"
                   height="64"
