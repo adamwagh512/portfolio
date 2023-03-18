@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import HTML from '../public/assets/skills/html-badge.png'
+import CSS from '../public/assets/skills/css-badge.png'
+import JS from "/../public/assets/skills/JavaScript-badge.png"
+import Node from "/../public/assets/skills/python-badge.png"
 
 const Skills = () => {
   return (
@@ -33,7 +36,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/css-badge.png"
+                  src={CSS}
                   alt="css"
                   width="64"
                   height="64"
@@ -65,7 +68,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/node-badge.png"
+                  src={JS}
                   alt="node"
                   width="64"
                   height="64"
@@ -81,7 +84,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/python-badge.png"
+                  src={Node}
                   alt="python"
                   width="64"
                   height="64"
