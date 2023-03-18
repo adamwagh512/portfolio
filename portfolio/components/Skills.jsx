@@ -12,7 +12,7 @@ const Skills = () => {
         {/* Grid container */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 ">
         {/* HTML badge */}
-          <div className="p-6 shadow-xl hover:scale-105 ease-in duration-300 backdrop-brightness-50">
+          <div className="p-6 shadow-xl hover:scale-110 ease-in duration-300 backdrop-brightness-50">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image

@@ -24,7 +24,7 @@ const Project = () => {
         <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
 
         <ProjectItem
-          title="Student Organizer"
+          title="StudySchedule"
           description='An app to help students organize their schedules'
           backgroundImg={student_2}
           projectUrl="/student"
@@ -46,7 +46,7 @@ const Project = () => {
         />
 
         <ProjectItem
-          title="Data Science Project"
+          title="Medical Insurance Analysis"
           description='A data science project using Python'
           backgroundImg={data_1}
           projectUrl="/data"

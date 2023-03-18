@@ -127,16 +127,26 @@ const navbar = () => {
               {/* This div is responsible for rendering social media icons to the bottom of the screen */}
               <div className="flex items-center justify-between my-4 w-[80%] sm:[80%]">
                 <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                <a href="https://www.linkedin.com/in/adam-wagh/" target='_blank'>
                   <FaLinkedinIn />
+                  </a>
                 </div>
                 <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <a href="https://github.com/adamwagh512">
                   <FaGithub />
+                  </a>
                 </div>
                 <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <a href="mailto:adamwagh@gmail.com">
                   <AiOutlineMail />
+                  </a>
                 </div>
                 <div className="rounded-full p-3 cursor-pointer hover:scale-105 ease in duration-100 border">
+                  <a href="../assets/resume.pdf"
+                      target="_blank"
+                      rel="noreferrer">
                   <BsPersonLinesFill />
+                  </a>
                 </div>
               </div>
             </div>
