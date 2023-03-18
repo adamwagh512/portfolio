@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import adam_photo from "/../public/assets/images/adam_photo.jpg"
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <div className="col-span-2">
           <Image
             className="rounded-xl m-auto pt-5 md:float-left md:h-[65vh] md:w-auto md:pr-5 md:hover:scale-105 ease-in duration-300"
-            src="/../public/assets/images/adam_photo.jpg"
+            src= {adam_photo}
             width="150"
             height="100"
           ></Image>

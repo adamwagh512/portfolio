@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form";
 const Contact = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (formData) => {
-    window.location.href = `mailto:adamwagh@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name} and my phone number is ${formData.phone} and ${formData.message}.`;
+    window.location.href = `mailto:adamwagh@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name} and my phone number is ${formData.phone} and ${formData.message}`;
   };
 
   return (
