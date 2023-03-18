@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
+import AdamWagh_logo from '/../public/assets/AdamWagh_logo.jpg'
 
 // Many individual styling comments were left out because I can automatically see them. To ensure that you can see them as well please make sure you are using
 // The Tailwind CSS IntelliSense extention in your IDE.
@@ -19,10 +20,10 @@ const navbar = () => {
     // Controls the size and positioning of the navbar
     <div className="fixed top-0 w-full h-20 shadow-xl z-[100]">
       {/* Handles styling and positioning within navbar */}
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#4E4E50]">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-gray-800">
         {/* Imports image and controls sizing */}
         <Image
-          src="/../public/assets/AdamWagh_logo.jpg"
+          src={AdamWagh_logo}
           alt="logo"
           width="125"
           height="50"
