@@ -25,7 +25,7 @@ const algos = () => {
       <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>The Github repository of Codewars kata solutions is an excellent showcase my thought process and problem-solving skills. The repository contains a collection of well-documented solutions to various katas, providing insight into how I approach and solve complex programming challenges. The solutions are well-organized and easy to navigate, making it a valuable resource for aspiring programmers looking to learn new techniques and approaches. By sharing my thought process and solutions, I hope to contribute to the programming community's growth and development, and inspiring others to improve their coding skills.</p>
+          <p>A Github repository of Codewars kata solutions is an excellent showcase my thought process and problem-solving skills. The repository contains a collection of well-documented solutions to various katas, providing insight into how I approach and solve complex programming challenges. The solutions are well-organized and easy to navigate, making it a valuable resource for aspiring programmers looking to learn new techniques and approaches. By sharing my thought process and solutions, I hope to contribute to the programming community's growth and development, and inspiring others to improve their coding skills.</p>
          
           <a href='https://github.com/adamwagh512/dataStructuresAndAlgos' target='_blank'>
           <button className="px-8 py-2 mt-4 text-white bg-[#0093B9]" >Visit the Repository</button>
