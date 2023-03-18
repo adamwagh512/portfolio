@@ -6,7 +6,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 
 const Main = () => {
   return (
-    <div className='pt-14 h-screen'>
+    <div id='homePage' className='pt-14 h-screen'>
         <div>
             <div className='flex items-center m-auto'>
                 <Image className='pt-10' src='/../public/assets/console.jpg' width='1000' height='150' />

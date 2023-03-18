@@ -4,6 +4,8 @@ import Main from '../components/homePage'
 import Navbar from '../components/navbar1'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Project from '../components/p_projects'
+import Contact from '../components/Contact' 
 import Image from 'next/image'
 
 
@@ -19,10 +21,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Navbar />
       <Main />
       <About />
       <Skills />
+      <Project />
+      <Contact />
       
     </div>
   )
