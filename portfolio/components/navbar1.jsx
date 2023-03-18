@@ -31,7 +31,7 @@ const navbar = () => {
         <div>
           {/*This unordered list contains the links to all the sections of my portfolio, it is hidden by default and only shows up when screen size >= med  */}
           <ul className="hidden md:flex">
-            <Link href="/#homePage">
+            <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
             <Link href="/#about">
@@ -103,7 +103,7 @@ const navbar = () => {
           <div className="py-4 flex flex-col">
             {/* Menu options for mobile menu */}
             <ul className="uppercase">
-              <Link href="/#homePage">
+              <Link href="/">
                 <li onClick={()=> setNav(false)} className="py-4 text-sm">Home</li>
               </Link>
               <Link href="/#about">
