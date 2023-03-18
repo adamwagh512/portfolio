@@ -4,6 +4,7 @@ import HTML from '../public/assets/skills/html-badge.png'
 import CSS_badge from '../public/assets/skills/css-badge.png'
 import JS_badge from '/../public/assets/skills/JavaScript-badge.png'
 import Node_badge from '/../public/assets/skills/python-badge.png'
+import css from "styled-jsx/css";
 
 const Skills = () => {
   return (
@@ -36,7 +37,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={CSS_badge}
+                  src={HTML}
                   alt="css"
                   width="64"
                   height="64"
