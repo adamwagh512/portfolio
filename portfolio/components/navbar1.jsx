@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
-import AdamWagh_logo from '/../public/assets/AdamWagh_logo.jpg'
+import AdamWagh_logo from '../public/assets/AdamWagh_logo.jpg'
 
 // Many individual styling comments were left out because I can automatically see them. To ensure that you can see them as well please make sure you are using
 // The Tailwind CSS IntelliSense extention in your IDE.
