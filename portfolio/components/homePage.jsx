@@ -1,13 +1,13 @@
 import React from "react";
 import Link from 'next/link'
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 
 const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center ">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-400">
              Front-End | Back-End | MERN Stack Developer
@@ -20,7 +20,7 @@ const Main = () => {
             I am a Front-End Web Developer{" "}
           </h1>
           <p className="py-4 text-gray-400 max-w-[70%] m-auto">
-          Creative and Driven Junior Front-End Web Developer with a Passion for Design and User Experience, Ready to Bring Your Website to Life with Cutting-Edge Technology and Innovative Visual Solutions.
+          Creative and driven junior front-end web developer with a passion for design and user experience, ready to bring your website to life with cutting-edge technology and innovative visual solutions.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full border p-6 cursor-pointer hover:scale-110 ease-in duration-300">
