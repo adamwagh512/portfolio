@@ -10,9 +10,22 @@ import Image from 'next/image'
 
 
 
+
 const Home: NextPage = () => {
   return (
+    
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (screen.orientation) {
+                screen.orientation.lock('portrait');
+              } else {
+                alert('Screen orientation lock not supported');
+              }
+            `
+          }}
+        />
       <Head>
         {/* Page Title */}
         <title>Adam | Full Stack Developer</title>
