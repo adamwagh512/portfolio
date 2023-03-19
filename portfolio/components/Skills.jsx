@@ -12,6 +12,10 @@ import SQL_badge from '../public/assets/skills/mysql2-badge.png'
 import React_badge from '../public/assets/skills/react-badge.png'
 import Figma_badge from '../public/assets/skills/figma4-badge.png'
 import Next_badge from '../public/assets/skills/nextjs-badge.png'
+import Tailwind_badge from '../public/assets/skills/tailwindcss-badge.png'
+import Bulma_badge from '../public/assets/skills/bulma3-badge.png'
+import Github_badge from '../public/assets/skills/github1-badge.png'
+import Learning_badge from '../public/assets/skills/learning-badge.gif'
 
 
 const Skills = () => {
@@ -242,7 +246,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/tailwindcss-badge.png"
+                  src={Tailwind_badge}
                   alt="tailwind"
                   width="64"
                   height="64"
@@ -259,7 +263,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/bulma3-badge.png"
+                  src={Bulma_badge}
                   alt="figma"
                   height="64"
                   width="64"
@@ -277,7 +281,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/github1-badge.png"
+                  src={Github_badge}
                   alt="figma"
                   height="64"
                   width="64"
@@ -296,7 +300,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/learning-badge.gif"
+                  src={Learning_badge}
                   alt="learning"
                   width="64"
                   height="64"
